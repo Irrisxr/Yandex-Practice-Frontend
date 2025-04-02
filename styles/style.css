@@ -14,12 +14,61 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.header__logo {
+  background-image: url('/Project №1-Начучиться учиться/images/logo_place_header.svg');
+  z-index: 2;
+  width: 228px;
+  height: 32px;
+  position: absolute;
+  margin: 30px 0 0 64px; 
+  
+}
+
+
+.header__title {
+  width: 730px;
+  margin-top: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+
+.header__suptitle {
+  position: absolute;
+  width: 338px;
+  margin: 0;
+  left: 30px;
+  bottom: 64px;
+  z-index: 2;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 765;
+  height: 608;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  right: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
